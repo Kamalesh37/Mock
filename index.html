@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>finance</title>
+        <link href="details.js">
+    </head>
+    <body>
+        <form action="" class="Exp">
+            <label for="Expense">Amount:</label>
+            <input type="text" placeholder="enter the expense amount" id="amt"><br>
+        <div class="category">
+            <label for="category">Category:</label><br>
+            <input type="radio" name="category" id="1" value="Food">Food:<br>
+            <input type="radio" name="category" id="2" value="Education">Education:<br>
+            <input type="radio" name="category" id="3" value="celebration">celebration:<br>
+            <input type="radio" name="category" id="4" value="donations">Donations:<br>
+            <input type="radio" name="category" id="5" value="personal">personal:<br>
+        </div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date"><br>
+            <button type="submit" name="btn" onclick="display()">Submit</button>
+
+            <div class="display" id="display">
+
+            </div>
+        </form>
+        <script>
+            var exp=document.getElementsByName("Exp");
+var amount=parseInt(document.getElementsByName("amt"));
+var date=document.getElementsByName("date")
+var category=document.getElementsByClassName("category");
+var submit=document.getElementsByName("btn");
+
+function expense(amount,category,date){
+    let a=amount;
+    let cat=category;
+    let d=date;
+
+    if(cat==1){
+        a=a;
+        d=d;
+    }
+    if(cat==2){
+        a=a;
+        d=d;
+    }
+    if(cat==3){
+        a=a;
+        d=d;
+    }
+    if(cat==4){
+        a=a;
+        d=d;
+    }
+    if(cat==5){
+        a=a;
+        d=d;
+    }
+    else{
+        
+    }
+
+}
+function display(){
+    var details=document.getElementById("display").innerHTML(expense());
+    window.alert(details);
+}
+        </script>
+    </body>
+</html>
